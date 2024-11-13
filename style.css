@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    margin: 0px 116px;
+}
+
+.header {
+    background-image: url(back.jpg);
+    height: 100vh; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.header-line {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-item {
+    color:#46281b;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+
+    margin-right: 25px;
+
+    transition: color 0.3s linear;
+}
+
+.nav-item:hover {
+    color: #d97958;
+}
+
+
+.cart {
+    position: relative;
+
+    border-right: 1px solid#46281b;
+    padding-right: 10px;
+    height: 50px;
+}
+
+.cart-img {
+    position: absolute;
+    top: 18px;
+    right: 7px;
+}
+
+.num {
+    color:#fff;
+    text-decoration: none;
+    font-weight: 400;
+
+    transition: color 0.3s linear;
+}
+
+.num:hover {
+    color: #d97958;
+}
+
+
+
+.phone-holder {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    background-color: #CE8D6D;
+    color:#46281b;
+    text-decoration: none;
+    padding: 14px 18px;
+    font-weight: 700;
+
+    transition: background-color 0.2s linear;
+}
+
+.button:hover {
+    background-color: #d97958;
+}
+
+.header-down {
+    position: relative;
+}
+
+.header-title {
+    color: #ce9e86;
+    font-family: 'Tinos', serif;
+    font-size: 50px;
+    font-weight: 400;
+
+    text-align: center;
+    position: absolute;
+    left: 0;
+
+    margin-top: 192px;
+    margin-bottom: 12px;
+}
+
+.header-suptitle {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+
+
+}
+
+.header-suptitle:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 61px;
+    background-color: #fff;
+    top: 127px;
+    left: -20px;
+}
+
+.header-suptitle:before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 61px;
+    background-color: #fff;
+    top: 127px;
+    left: 388px;
+}
+
+.header-button {
+    background-color: #CE8D6D;
+    padding: 14px 28px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+
+    transition: background-color 0.3s linear;
+}
+
+.header-button:hover {
+    background-color: #d97958;
+}
+
+
+
+.cards-holder {
+    display: flex;
+    justify-content: center;
+}
+.block{
+    background-color:rgb(4, 56, 56);
+    height: 850px;
+    max-width: 400px;
+    margin: 0px auto;
+    margin-top: 200px;
+}
+.card{
+    width: 349px;
+    height: 379px;
+    box-shadow: 10px 20px 42px 20px #e1c6bb;
+    margin-right: 34px;
+    margin-top: 50px;
+    padding: 0px 0px 10px 10px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+}
+.card-image{
+    display: flex;
+    justify-content: center;
+    padding-top: 21px;
+}
+.card-title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: 'Tinos', serif;
+    font-size: 26px;
+    font-weight: 400;
+}
+.description{
+    text-align: center;
+    font-family: 'Tinos', serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+.card-title span {
+    color: #979AAF;
+    margin-left: 2px;
+}
+.card-button{
+    background-color: #877077    ; 
+    padding: 14px 28px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none; 
+    border-radius: 10px;
+    position: relative;
+    top:40px;
+    left:105px;
+}
+.card-button:hover{
+    background-color:#d97958;
+}
+
+
+/* Медиазапрос для мобильных устройств */
+@media (max-width: 768px) {
+    .container {
+        margin: 0 16px;
+    }
+    .cards-holder {
+        flex-direction: column; /* Выравниваем элементы вертикально */
+    }
+    .card {
+        width: calc(100% - 32px); /* Занимаем всю ширину экрана, с учетом отступов */
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .header-suptitle:after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .header-suptitle:before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .card-button{
+        left: 50%;
+        transform: translateX(-50%);
+        width: fit-content; /* Кнопка занимает необходимую ширину */
+    }
+
+    .cards-holder {
+        display: flex;
+        flex-direction: row;
+        gap: 20px; 
+        justify-content: space-around;
+    }
+
+    /* Медиазапрос для мобильных устройств */
+    @media (max-width: 768px) {
+        .cards-holder {
+            flex-direction: column; /* Выравниваем элементы вертикально */
+        }
+    }
+#CE8D6D
+#877077
+#8D8A9D
+#979AAF
+#413A3A
